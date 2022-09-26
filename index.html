@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/index.css">
+	<!--<link rel="stylesheet" href="css/normalize.css">-->
+	<!--引入轮播图样式-->
+	<link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+<body>
+	
+	<div class="top">
+		<span>黑马面面</span>
+	</div>
+	<nav>
+		<a href="#">
+			<img src="icons/icon1.png" alt="">
+			<span>hr面试</span>
+		</a>
+		<a href="#">
+			<img src="icons/icon1.png" alt="">
+			<span>hr面试</span>
+		</a>
+		<a href="#">
+			<img src="icons/icon1.png" alt="">
+			<span>hr面试</span>
+		</a>
+		<a href="#">
+			<img src="icons/icon1.png" alt="">
+			<span>hr面试</span>
+		</a>
+		<a href="#">
+			<img src="icons/icon1.png" alt="">
+			<span>hr面试</span>
+		</a>
+		<a href="#">
+			<img src="icons/icon1.png" alt="">
+			<span>hr面试</span>
+		</a>
+		<a href="#">
+			<img src="images/go.png" alt="">
+		</a>
+	</nav>
+	<!--就业指导-->
+	<div class="career">
+		<div class="ca-top">
+			<img src="icons/i2.png" alt="">
+			<h4>就业指导</h4>
+			<a href="#">
+				<span>更多>></span>
+			</a>
+		</div>
+		<!--轮播图-->
+		<div class="get_job">
+			<div class="swiper-container get_job_fo">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="images/pic.png" alt="">
+						</a>
+						<p>老师教你应对面试技巧</p>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="images/ldh.jpg" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="images/3.jpg" alt="">
+						</a>
+					</div>
+				</div>
+				<!--&lt;!&ndash; Add Pagination &ndash;&gt;
+				<div class="swiper-pagination"></div>-->
+				
+			</div>
+			<!--左右箭头-->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</div>
+	<div class="study">
+		<div class="ca-top">
+			<img src="icons/i1.png" alt="">
+			<h4>充电学习</h4>
+			<a href="#">
+				<span>更多>></span>
+			</a>
+		</div>
+		<!-- Swiper -->
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="images/pic1.png" alt="">
+						<h6>说地道英语，告别中式英语</h6>
+						<p>156人学习</p>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="images/pic1.png" alt="">
+						<h6>说地道英语，告别中式英语</h6>
+						<p>156人学习</p>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="images/pic1.png" alt="">
+						<h6>说地道英语，告别中式英语</h6>
+						<p>156人学习</p>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="images/pic1.png" alt="">
+						<h6>说地道英语，告别中式英语</h6>
+						<p>156人学习</p>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="images/pic1.png" alt="">
+						<h6>说地道英语，告别中式英语</h6>
+						<p>156人学习</p>
+					</a>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	
+	<!--底部-->
+	<footer>
+		<div class="fo-index">
+			<a href="#">
+				<img src="icons/home.png" alt="">
+				<span>首页</span>
+			</a>
+			<a href="#">
+				<img src="icons/home.png" alt="">
+				<span>首页</span>
+			</a>
+			<a href="#">
+				<img src="icons/home.png" alt="">
+				<span>首页</span>
+			</a>
+			<a href="#">
+				<img src="icons/home.png" alt="">
+				<span>首页</span>
+			</a>
+		</div>
+	</footer>
+	<script src="js/flexible.js"></script>
+	<script src="js/swiper.min.js" ></script>
+	<script>
+		(function () {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView:2,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                // 分页小圆点
+                /*pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},*/
+
+                // 添加左右箭头
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        })();
+	</script>
+	<script>
+		(function () {
+            var swiper = new Swiper(".mySwiper", {
+                // 能看到的个数
+                slidesPerView: 2.5,
+                spaceBetween: 30,
+	            // 去掉小圆点
+                /*pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },*/
+            });
+        })()
+	</script>
+</body>
+</html>

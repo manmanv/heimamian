@@ -1,0 +1,259 @@
+body{
+  display:block;
+  min-width: 320px;
+  max-width: 750px;
+  /*flexible划分了十等份*/
+  margin: 0 auto;
+  /*font-family: Arial, Helvetica;*/
+  background: #f2f2f2;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+/*约束当屏幕大于750px的时候，html字体不变化*/
+@media screen and (min-width: 750px){
+  html{
+    font-size: 37.5px!important;
+  }
+}
+/*顶部*/
+.top{
+  position: relative;
+  display: block;
+  width:100%;
+  height: 2.667rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 2.667rem;
+  font-size: 0.88rem;
+  border-bottom: 1px solid #ECECEC;
+}
+.top span{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  height: 0.88rem;
+  width: 3.707rem;
+}
+/*导航栏*/
+nav{
+  display: flex;
+  width: 100%;
+  height: 19.2rem;
+  background-color:#ffffff;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav>a{
+  display: flex;
+  flex: 1;
+  width: 3.707rem;
+  flex-flow: column wrap;
+  margin:1.067rem 1.387rem;
+}
+nav img{
+  display: block;
+  width: 3.707rem;
+}
+nav span{
+  font-size: 0.667rem;
+  color: #707070;
+  text-align: center;
+}
+nav a:last-of-type{
+  flex: 1;
+  display: block;
+  margin: 0 auto;
+  margin-left: 0.267rem;
+}
+nav a:last-of-type img{
+  display: block;
+  width: 19.253rem;
+  height: 4.053rem;
+  background-size: 19.253rem auto;
+}
+
+.career{
+  width:100%;
+  background-color: white;
+}
+.ca-top{
+  position: relative;
+  height: 1.013rem;
+  margin-top: 0.267rem;
+  padding-top: 1.067rem;
+  margin-bottom: 0.907rem;
+
+}
+.ca-top img{
+  position: absolute;
+  left: 0.587rem;
+  /*display: inline-block;*/
+  width: 1.013rem;
+  height: 1.013rem;
+}
+.ca-top h4{
+  position: absolute;
+  font-size: 0.8rem;
+  left: 2.187rem;
+  top:0;
+}
+.ca-top span{
+  position: absolute;
+  right: 0.587rem;
+  font-size: 0.587rem;
+  color: #999999;
+  bottom: 0.027rem;
+}
+
+.get_job{
+  position: relative;
+  color: #333333;
+  font-size: 0.48rem;
+  .swiper-container {
+    //width: 100%;
+    height: 100%;
+    width: 14.4rem;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    //其余的兄弟
+    transform: scale(0.8);
+    opacity: 0.4;
+    a{
+      width: 9.013rem;
+      height: 10.027rem;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    p{
+      width: 9.013rem;
+      font-size: 0.667rem;
+      margin-top: 0.64rem;
+      color: #333333;
+    }
+  }
+  //选中的兄弟
+  .swiper-slide-active,.swiper-slide-duplicate-active{
+    transform: scale(1);
+    z-index: 999;
+    opacity: 1;
+  }
+}
+
+.study{
+  position: relative;
+  width:100%;
+  background-color: white;
+  overflow: hidden;
+  padding-bottom: 2.667rem;
+  .mySwiper{
+    padding: 0.533rem;
+  }
+
+  //轮播图
+  .swiper-slide {
+    width: 7.733rem;
+    height: 9.067rem;
+    font-size: 0.48rem;
+    background: #fff;
+    border-radius: 0.267rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    overflow: hidden;
+    margin-bottom: 0.533rem;
+    /* Center slide text vertically */
+    a{
+      width: 100%;
+      height: 100%;
+      img{
+        width: 7.253rem;
+        height: 4.56rem;
+      }
+      h6{
+        font-size:0.693rem;
+        text-align: left;
+        font-weight: 400;
+        color: #333333;
+        margin: 0.533rem 0.267rem;
+      }
+      p{
+        font-size: 0.533rem;
+        color: #ff0000;
+        margin: 0 0.267rem;
+      }
+
+  }
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+footer{
+  position:fixed;
+  left:50%;
+  transform: translateX(-50%);
+  bottom:0;
+  z-index: 9999;
+  display: flex;
+  width:20rem;
+  height: 3.067rem;
+  background-color:white;
+  border-top: 0.027rem solid #e2e2e2;
+  line-height: 3.067rem;
+  flex-direction: row;
+  a:first-of-type{
+    margin-left:0.933rem;
+  }
+  a:last-of-type{
+    margin-right: 0rem;
+  }
+  a{
+    position: relative;
+    height: 100%;
+    flex: 1;
+    display:inline-block;
+    margin-right: 1.6rem;
+    width: 3.2rem;
+    img{
+      display: block;
+      margin:0.533rem auto 0rem;
+    }
+    span{
+      position: absolute;
+      display: inline;
+      text-align: center;
+      color: #50c4ed;
+      font-size: 0.533rem;
+      top:0.533rem;
+      left:1.067rem;
+    }
+  }
+}
